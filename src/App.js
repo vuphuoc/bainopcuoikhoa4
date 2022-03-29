@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route } from 'react-router-dom';
+import SignUp from './pages/SignUp/SignUp';
+import UserManagement from './pages/UserManagement/UserManagement';
+import UserSignUpTemplate from './templates/LoginTemplate/UserSignUpTemplate';
+import Login from './pages/Login/Login';
+import UserManagementTemplate from './templates/ManagementTemplate/UserManagementTemplate';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+
+    <UserSignUpTemplate exact path='/' Component={SignUp} />
+    <UserSignUpTemplate exact path='/login' Component={Login} />
+    <UserManagementTemplate exact path='/usermanagement' Component={UserManagement} />
+  </>
 }
 
 export default App;
