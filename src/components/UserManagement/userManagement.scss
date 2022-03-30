@@ -12,3 +12,27 @@
         cursor: pointer;
     }
 }
+
+.menu__container {
+    list-style-type: none;
+    background-color: #f0f2f5;
+    padding: 0;
+    margin-top: 5px;
+    .menu__item {
+        padding: 0.5rem 0.7rem;
+        transition: all 0.5s;
+
+        a {
+            color: black;
+            display: block;
+        }
+
+        &:hover {
+            background-color: #40a9ff;
+
+            a {
+                color: rgb(247, 244, 244);
+            }
+        }
+    }
+}

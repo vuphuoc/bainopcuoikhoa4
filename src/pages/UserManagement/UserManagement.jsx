@@ -124,6 +124,8 @@ export default function UserManagement() {
                                 updatedUser
                             });
 
+                            setEditingRowKey(-1)
+
                         }}>Save</Button>
                         <Button onClick={() => setEditingRowKey(-1)}>Cancel</Button>
                     </Space>
@@ -175,7 +177,7 @@ export default function UserManagement() {
                     }} enterButton />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mt-3">
                 <div className="col-12">
                     <Form form={form} >
                         <Table columns={columns} rowKey="userId" dataSource={lstUser} />

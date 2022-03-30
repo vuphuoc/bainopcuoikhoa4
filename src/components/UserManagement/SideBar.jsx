@@ -6,6 +6,10 @@ import {
     UserOutlined,
     VideoCameraOutlined,
     UploadOutlined,
+    DashboardOutlined,
+    ProjectOutlined,
+    UserAddOutlined
+
 } from '@ant-design/icons';
 
 import './userManagement.scss';
@@ -36,17 +40,17 @@ export default function SideBar() {
                 {state.collapsed ? <span className='toggleDashboard' onClick={toggle}> <i className="fa fa-align-justify"></i></span> : <span className='toggleDashboard' onClick={toggle}><i className="fa fa-arrow-left"></i></span>}
             </div>
 
-            <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
-                <Menu.Item key="1">
+            <Menu theme="light" mode="inline" defaultSelectedKeys={['4']}>
+                <Menu.Item key="1" icon={<DashboardOutlined />}>
                     Cyber board
                 </Menu.Item>
-                <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+                <Menu.Item key="2" icon={<ProjectOutlined />}>
                     Project management
                 </Menu.Item>
                 <Menu.Item key="3" icon={<UploadOutlined />}>
                     Create Project
                 </Menu.Item>
-                <Menu.Item key="4" icon={<UploadOutlined />}>
+                <Menu.Item key="4" icon={<UserAddOutlined />}>
                     User management
                 </Menu.Item>
             </Menu>

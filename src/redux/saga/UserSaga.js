@@ -142,8 +142,8 @@ function* editUserSaga(action) {
             //get list user từ API và put vào reducer cho UserManagement
             //để refresh list user mới update
             yield put({
-                type: GET_LIST_USER,
-                lstUser: data.content
+                type: GET_LIST_USER_SAGA,
+                search: ''
             })
 
         }
@@ -176,8 +176,8 @@ function* deleteUserSaga(action) {
             //get list user từ API và put vào reducer cho UserManagement
             //để refresh list user mới update
             yield put({
-                type: GET_LIST_USER,
-                lstUser: data.content
+                type: GET_LIST_USER_SAGA,
+                search: ''
             })
 
         }

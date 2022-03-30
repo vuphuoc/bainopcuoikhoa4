@@ -13,6 +13,7 @@ function App() {
     <UserSignUpTemplate exact path='/' Component={SignUp} />
     <UserSignUpTemplate exact path='/login' Component={Login} />
     <UserManagementTemplate exact path='/usermanagement' Component={UserManagement} />
+    <UserSignUpTemplate exact path='/logout' Component={Login} />
   </>
 }
 
